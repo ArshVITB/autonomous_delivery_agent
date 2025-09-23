@@ -102,7 +102,7 @@ autonomous_delivery_agent/
 ### Path Planning Algorithms
 - **Breadth-First Search (BFS)**: Uninformed search guaranteeing shortest path length
 - **Uniform-Cost Search (UCS)**: Uninformed search guaranteeing optimal cost path
-- **A* Search**: Informed search with admissible heuristics for optimal efficiency
+- **A * Search**: Informed search with admissible heuristics for optimal efficiency
 - **Local Search**: Hill-climbing with random restarts for dynamic replanning
 
 ### Environment Features
@@ -120,75 +120,10 @@ G goal_x goal_y
 T terrain_x terrain_y cost
 O obstacle_x obstacle_y
 D dynamic_x dynamic_y schedule
-## Installation & Setup
+
 ```
-### 💻 Command Line Interface
-
-**Basic Syntax**
-``` bash
-python src/cli.py <map_file> [options]
-```
-**Examples**
-``` bash
-
-# A* with visualization
-python src/cli.py maps/medium.map --planner astar --visualize
-
-# UCS with diagonal movements
-python src/cli.py maps/large.map --planner ucs --diagonals
-
-# Local search on dynamic map
-python src/cli.py maps/dynamic.map --planner local
-
-# Save results to file
-python src/cli.py maps/small.map --planner bfs --output results.txt
-```
-### 📊 Experimental Results
-
-``` bash
-python run_experiments.py
-```
-This generates:
-
--experiment_results.json: Detailed metrics in JSON format
-
--experiment_summary.txt: Human-readable summary with rankings
-
-**Performance Metrics**
-
-- Success Rate: Percentage of successful path findings
-- Planning Time: Average time taken to find path (seconds)
-- Path Cost: Total movement cost of delivered path
-- Nodes Expanded: Search space exploration efficiency
-- Path Length: Number of steps in the path
-
-### 🧪 Testing
-
-python -m unittest discover tests/  
-
-### Individual Test Files
-
-python -m unittest tests/test_environment.py
-python -m unittest tests/test_planners.py  
-python -m unittest tests/test_agent.py
-
-
-### Test Coverage
-
-The test suite covers:
-
-* ✅ Environment initialization and configuration
-
-* ✅ Path planning algorithm correctness
-
-* ✅ Agent movement and replanning logic
-
-* ✅ Obstacle avoidance and terrain cost handling
-    
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
-
+## 💻 Installation & Setup
+   
 ### Installation Steps
 
 1. **Clone the repository**:
@@ -222,6 +157,48 @@ python src/cli.py maps/large.map --planner bfs --diagonals
 ``` bash
 python run_experiments.py
 ```
+### 📊 Experimental Results
+
+``` bash
+python run_experiments.py
+```
+This generates:
+
+- experiment_results.json: Detailed metrics in JSON format
+
+- experiment_summary.txt: Human-readable summary with rankings
+
+**Performance Metrics**
+
+- Success Rate: Percentage of successful path findings
+- Planning Time: Average time taken to find path (seconds)
+- Path Cost: Total movement cost of delivered path
+- Nodes Expanded: Search space exploration efficiency
+- Path Length: Number of steps in the path
+
+### 🧪 Testing
+
+python -m unittest discover tests/  
+
+### Individual Test Files
+
+python -m unittest tests/test_environment.py
+python -m unittest tests/test_planners.py  
+python -m unittest tests/test_agent.py
+
+
+### Test Coverage
+
+The test suite covers:
+
+* ✅ Environment initialization and configuration
+
+* ✅ Path planning algorithm correctness
+
+* ✅ Agent movement and replanning logic
+
+* ✅ Obstacle avoidance and terrain cost handling
+
 ## Results and Analysis
 
 - The project includes comprehensive experimental analysis comparing:
@@ -277,6 +254,7 @@ Built with ❤️ for AI/ML Education
 *CSA2001 - Fundamentals of AI and ML Project*
 
 </div> ```
+
 
 
 
