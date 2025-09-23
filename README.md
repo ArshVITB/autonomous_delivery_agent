@@ -199,9 +199,9 @@ This project is part of CSA2001 - Fundamentals of AI and ML course requirements.
 
 ## Acknowledgments
 
-Course instructors for project guidelines
-AI search algorithm literature for reference implementations
-Python community for excellent development tools
+- Course instructors for project guidelines
+- AI search algorithm literature for reference implementations
+- Python community for excellent development tools
 
 <div align="center">
 Built with ❤️ for AI/ML Education
@@ -209,6 +209,7 @@ Built with ❤️ for AI/ML Education
 *CSA2001 - Fundamentals of AI and ML Project*
 
 </div> 
+
 
 
 
