@@ -41,7 +41,7 @@ python src/cli.py maps/small.map --planner astar --visualize
 python run_experiments.py
 ```
 
-## Project Structure
+## 📁 Project Structure
 ``` text 
 autonomous_delivery_agent/
 ├── src/ # Source code
@@ -67,6 +67,47 @@ autonomous_delivery_agent/
 ├── run_experiments.py # Experiment runner
 └── README.md # This file
 ```
+🧠 ### Algorithms Implemented
+
+1. Breadth-First Search (BFS)
+   
+# Type: Uninformed search
+
+# Optimality: Guarantees shortest path length
+
+# Use Case: When path length matters more than cost
+
+# Complexity: O(b^d) where b is branching factor, d is depth
+
+2. Uniform-Cost Search (UCS)
+   
+# Type: Uninformed search
+
+# Optimality: Guarantees lowest cost path
+
+# Use Case: When terrain costs vary significantly
+
+# Complexity: O(b^(1+C/ε)) where C is optimal cost
+
+3. A* Search
+   
+# Type: Informed search with heuristics
+
+# Optimality: Guarantees optimal path with admissible heuristic
+
+# Use Case: General purpose optimal path finding
+
+# Complexity: O(b^d) with good heuristic
+
+4. Local Search (Hill-climbing with Random Restarts)
+   
+# Type: Optimization with random restarts
+
+# Optimality: May find suboptimal solutions
+
+# Use Case: Dynamic environments requiring quick replanning
+
+# Complexity: Depends on number of restarts
 
 ## Features
 
@@ -126,39 +167,6 @@ G goal_x goal_y
 T terrain_x terrain_y cost
 O obstacle_x obstacle_y
 D dynamic_x dynamic_y schedule
-
-### Algorithms Comparison
-
-## Breadth-First Search (BFS)
-
-Type: Uninformed search
-
-Optimality: Guarantees shortest path length
-
-Use Case: When path length matters more than cost
-
-Uniform-Cost Search (UCS)
-Type: Uninformed search
-
-Optimality: Guarantees lowest cost path
-
-Use Case: When terrain costs vary significantly
-
-## A* Search
-
-Type: Informed search with heuristics
-
-Optimality: Guarantees optimal path with admissible heuristic
-
-Use Case: General purpose optimal path finding
-
-## Local Search
-
-Type: Optimization with random restarts
-
-Optimality: May find suboptimal solutions
-
-Use Case: Dynamic environments requiring quick replanning
 
 ### Testing
 
@@ -237,3 +245,4 @@ AI search algorithm literature for reference implementations
 
 
 Python community for excellent development tools
+
