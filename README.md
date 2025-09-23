@@ -2,7 +2,11 @@
 
 An intelligent agent that navigates a 2D grid city to deliver packages using various path planning algorithms as part of CSA2001 - Fundamentals of AI and ML Project Based Learning.
 
-## Project Overview
+![AI Path Planning](https://img.shields.io/badge/AI-Path%20Planning-blue)
+![Python](https://img.shields.io/badge/Python-3.8%2B-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+## 📋 Project Overview
 
 This project implements an autonomous delivery agent that can navigate through a 2D grid environment with:
 - **Static obstacles** (buildings, barriers)
@@ -10,8 +14,35 @@ This project implements an autonomous delivery agent that can navigate through a
 - **Dynamic moving obstacles** (other vehicles, pedestrians)
 - **Multiple path planning algorithms** for optimal delivery efficiency
 
-## Project Structure
+## 🚀 Quick Start
 
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Installation
+```bash
+# Clone the repository
+git clone <repository-url>
+cd autonomous_delivery_agent
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Verify installation
+python -m unittest discover tests/
+```
+### Run Basic Example
+```bash
+# Run A* algorithm on small map
+python src/cli.py maps/small.map --planner astar --visualize
+
+# Run comprehensive experiments
+python run_experiments.py
+```
+
+## Project Structure
+``` text 
 autonomous_delivery_agent/
 ├── src/ # Source code
 │ ├── environment.py # Grid environment implementation
@@ -35,7 +66,7 @@ autonomous_delivery_agent/
 ├── requirements.md # Setup instructions
 ├── run_experiments.py # Experiment runner
 └── README.md # This file
-
+```
 
 ## Features
 
@@ -203,5 +234,6 @@ Implementation follows specified requirements and constraints
 Course instructors for project guidelines
 
 AI search algorithm literature for reference implementations
+
 
 Python community for excellent development tools
