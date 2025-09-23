@@ -20,7 +20,7 @@ This project implements an autonomous delivery agent that can navigate through a
 - Python 3.8 or higher
 - pip (Python package manager)
 
-### Installation
+### 💻 Installation
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -122,37 +122,6 @@ O obstacle_x obstacle_y
 D dynamic_x dynamic_y schedule
 
 ```
-## 💻 Installation & Setup
-   
-### Installation Steps
-
-1. **Clone the repository**:
-```bash
-git clone <repository-url>
-cd autonomous_delivery_agent
-
-2. **Install dependencies**:
-pip install -r requirements.txt
-
-3. **Verify installation**:
-python -m unittest discover tests/
-```
-
-### Quick Start
-
-# A* algorithm on small map
-```bash
-python src/cli.py maps/small.map --planner astar
-```
-# UCS on medium map with visualization
-``` bash
-python src/cli.py maps/medium.map --planner ucs --visualize
-```
-# BFS with diagonal movements allowed
-```bash
-python src/cli.py maps/large.map --planner bfs --diagonals
-```
-
 ### Run All Experiments
 ``` bash
 python run_experiments.py
@@ -254,6 +223,7 @@ Built with ❤️ for AI/ML Education
 *CSA2001 - Fundamentals of AI and ML Project*
 
 </div> ```
+
 
 
 
