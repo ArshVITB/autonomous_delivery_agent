@@ -122,10 +122,6 @@ O obstacle_x obstacle_y
 D dynamic_x dynamic_y schedule
 
 ```
-### Run All Experiments
-``` bash
-python run_experiments.py
-```
 ### 📊 Experimental Results
 
 ``` bash
@@ -137,7 +133,7 @@ This generates:
 
 - experiment_summary.txt: Human-readable summary with rankings
 
-**Performance Metrics**
+## Performance Metrics
 
 - Success Rate: Percentage of successful path findings
 - Planning Time: Average time taken to find path (seconds)
@@ -145,16 +141,17 @@ This generates:
 - Nodes Expanded: Search space exploration efficiency
 - Path Length: Number of steps in the path
 
-### 🧪 Testing
-
+## 🧪 Testing
+``` bash 
 python -m unittest discover tests/  
+```
 
 ### Individual Test Files
-
+``` bash
 python -m unittest tests/test_environment.py
 python -m unittest tests/test_planners.py  
 python -m unittest tests/test_agent.py
-
+```
 
 ### Test Coverage
 
@@ -170,7 +167,7 @@ The test suite covers:
 
 ## Results and Analysis
 
-- The project includes comprehensive experimental analysis comparing:
+* The project includes comprehensive experimental analysis comparing:
 
 1) Path cost: Total movement cost of delivered path
 2) Nodes expanded: Search space exploration efficiency
@@ -181,7 +178,7 @@ The test suite covers:
 
 ## Dynamic Replanning
 
-- The agent supports dynamic replanning when:
+* The agent supports dynamic replanning when:
 
 1) New obstacles appear during execution
 2) Terrain costs change unexpectedly
@@ -189,32 +186,21 @@ The test suite covers:
 
 **Example dynamic scenario provided in maps/dynamic.map.**
 
-### Git Workflow
+## Git Workflow
 
 1) Create feature branch: git checkout -b feature-name
-
 2) Make changes and test thoroughly
-
 3) Commit with descriptive messages
-
 4) Push and create pull request
 
 ## License
 
 This project is part of CSA2001 - Fundamentals of AI and ML course requirements. Academic integrity policies apply.
 
-## Authors
-
-Developed as part of AI/ML Fundamentals course project
-
-Implementation follows specified requirements and constraints
-
 ## Acknowledgments
 
 Course instructors for project guidelines
-
 AI search algorithm literature for reference implementations
-
 Python community for excellent development tools
 
 <div align="center">
@@ -222,7 +208,8 @@ Built with ❤️ for AI/ML Education
 
 *CSA2001 - Fundamentals of AI and ML Project*
 
-</div> ```
+</div> 
+
 
 
 
