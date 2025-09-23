@@ -112,8 +112,79 @@ autonomous_delivery_agent/
 - **Dynamic obstacles** with predictable movement patterns
 - **Real-time replanning** capability
 
+ ### 🗺️ Map File Format
+ ``` text
+width height
+S start_x start_y
+G goal_x goal_y
+T terrain_x terrain_y cost
+O obstacle_x obstacle_y
+D dynamic_x dynamic_y schedule
 ## Installation & Setup
+```
+### 💻 Command Line Interface
 
+**Basic Syntax**
+``` bash
+python src/cli.py <map_file> [options]
+```
+**Examples**
+``` bash
+
+# A* with visualization
+python src/cli.py maps/medium.map --planner astar --visualize
+
+# UCS with diagonal movements
+python src/cli.py maps/large.map --planner ucs --diagonals
+
+# Local search on dynamic map
+python src/cli.py maps/dynamic.map --planner local
+
+# Save results to file
+python src/cli.py maps/small.map --planner bfs --output results.txt
+```
+### 📊 Experimental Results
+
+``` bash
+python run_experiments.py
+```
+This generates:
+
+-experiment_results.json: Detailed metrics in JSON format
+
+-experiment_summary.txt: Human-readable summary with rankings
+
+**Performance Metrics**
+
+- Success Rate: Percentage of successful path findings
+- Planning Time: Average time taken to find path (seconds)
+- Path Cost: Total movement cost of delivered path
+- Nodes Expanded: Search space exploration efficiency
+- Path Length: Number of steps in the path
+
+### 🧪 Testing
+
+python -m unittest discover tests/  
+
+### Individual Test Files
+
+python -m unittest tests/test_environment.py
+python -m unittest tests/test_planners.py  
+python -m unittest tests/test_agent.py
+
+
+### Test Coverage
+
+The test suite covers:
+
+* ✅ Environment initialization and configuration
+
+* ✅ Path planning algorithm correctness
+
+* ✅ Agent movement and replanning logic
+
+* ✅ Obstacle avoidance and terrain cost handling
+    
 ### Prerequisites
 - Python 3.8 or higher
 - pip (Python package manager)
@@ -135,75 +206,42 @@ python -m unittest discover tests/
 ### Quick Start
 
 # A* algorithm on small map
+```bash
 python src/cli.py maps/small.map --planner astar
-
+```
 # UCS on medium map with visualization
+``` bash
 python src/cli.py maps/medium.map --planner ucs --visualize
-
+```
 # BFS with diagonal movements allowed
+```bash
 python src/cli.py maps/large.map --planner bfs --diagonals
+```
 
 ### Run All Experiments
-
+``` bash
 python run_experiments.py
-
-## Map File Format
-
-width height
-S start_x start_y
-G goal_x goal_y
-T terrain_x terrain_y cost
-O obstacle_x obstacle_y
-D dynamic_x dynamic_y schedule
-
-### Testing
-
-python -m unittest discover tests/  
-
-### Individual Test Files
-
-python -m unittest tests/test_environment.py
-python -m unittest tests/test_planners.py  
-python -m unittest tests/test_agent.py
-
-
-### Test Coverage
-
-The test suite covers:
-
-* Environment initialization and configuration
-
-* Path planning algorithm correctness
-
-* Agent movement and replanning logic
-
-* Obstacle avoidance and terrain cost handling
-
+```
 ## Results and Analysis
 
-The project includes comprehensive experimental analysis comparing:
+- The project includes comprehensive experimental analysis comparing:
 
 1) Path cost: Total movement cost of delivered path
-
 2) Nodes expanded: Search space exploration efficiency
-
 3) Planning time: Algorithm computational performance
-
 4) Success rate: Reliability in finding valid paths
 
-Results are automatically generated in experiment_results.txt when running run_experiments.py.
+**Results are automatically generated in experiment_results.txt when running run_experiments.py.**
 
 ## Dynamic Replanning
 
-The agent supports dynamic replanning when:
+- The agent supports dynamic replanning when:
 
 1) New obstacles appear during execution
-
 2) Terrain costs change unexpectedly
-
 3) The original path becomes blocked
 
-Example dynamic scenario provided in maps/dynamic.map.
+**Example dynamic scenario provided in maps/dynamic.map.**
 
 ### Git Workflow
 
@@ -231,9 +269,14 @@ Course instructors for project guidelines
 
 AI search algorithm literature for reference implementations
 
-
 Python community for excellent development tools
 
+<div align="center">
+Built with ❤️ for AI/ML Education
+
+*CSA2001 - Fundamentals of AI and ML Project*
+
+</div> ```
 
 
 
