@@ -67,47 +67,47 @@ autonomous_delivery_agent/
 ├── run_experiments.py # Experiment runner
 └── README.md # This file
 ```
-🧠 ### Algorithms Implemented
+ ### 🧠 Algorithms Implemented
 
 1. Breadth-First Search (BFS)
    
-# Type: Uninformed search
+Type: Uninformed search
 
-# Optimality: Guarantees shortest path length
+Optimality: Guarantees shortest path length
 
-# Use Case: When path length matters more than cost
+Use Case: When path length matters more than cost
 
-# Complexity: O(b^d) where b is branching factor, d is depth
+Complexity: O(b^d) where b is branching factor, d is depth
 
 2. Uniform-Cost Search (UCS)
    
-# Type: Uninformed search
+Type: Uninformed search
 
-# Optimality: Guarantees lowest cost path
+Optimality: Guarantees lowest cost path
 
-# Use Case: When terrain costs vary significantly
+Use Case: When terrain costs vary significantly
 
-# Complexity: O(b^(1+C/ε)) where C is optimal cost
+Complexity: O(b^(1+C/ε)) where C is optimal cost
 
 3. A* Search
    
-# Type: Informed search with heuristics
+Type: Informed search with heuristics
 
-# Optimality: Guarantees optimal path with admissible heuristic
+Optimality: Guarantees optimal path with admissible heuristic
 
-# Use Case: General purpose optimal path finding
+Use Case: General purpose optimal path finding
 
-# Complexity: O(b^d) with good heuristic
+Complexity: O(b^d) with good heuristic
 
 4. Local Search (Hill-climbing with Random Restarts)
    
-# Type: Optimization with random restarts
+Type: Optimization with random restarts
 
-# Optimality: May find suboptimal solutions
+Optimality: May find suboptimal solutions
 
-# Use Case: Dynamic environments requiring quick replanning
+Use Case: Dynamic environments requiring quick replanning
 
-# Complexity: Depends on number of restarts
+Complexity: Depends on number of restarts
 
 ## Features
 
@@ -245,4 +245,5 @@ AI search algorithm literature for reference implementations
 
 
 Python community for excellent development tools
+
 
