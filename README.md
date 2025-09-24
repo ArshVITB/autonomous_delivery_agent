@@ -179,19 +179,25 @@ The test suite covers:
 ## Screenshots 
 
 **A * in Dynamic Map**
+
 <img src ="screenshots/astar.jpg">
 
 **BFS in Dynamic Map**
+
 <img src ="screenshots/bfs.jpg">
 
 **UCS in Dynamic Map**
+
 <img src ="screenshots/ucs.jpg">
 
 **LOCAL in Dynamic Map**
+
 <img src ="screenshots/local.jpg">
 
 **All Experiments**
+
 <img src ="screenshots/run1.jpg">
+<br>
 <img src ="screenshots/run2.jpg">
 
 ## Dynamic Replanning
@@ -227,6 +233,7 @@ Built with ❤️ for AI/ML Education
 *CSA2001 - Fundamentals of AI and ML Project*
 
 </div> 
+
 
 
 
