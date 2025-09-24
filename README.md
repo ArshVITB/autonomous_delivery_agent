@@ -202,9 +202,9 @@ The test suite covers:
 
 ## Report
 
+**Download this file**
 <a href ="report/Report_Autonomous_Delivery_Agent.pdf"> Report </a>
-<br>
- 
+
 ## Dynamic Replanning
 
 * The agent supports dynamic replanning when:
@@ -238,6 +238,7 @@ Built with ❤️ for AI/ML Education
 *CSA2001 - Fundamentals of AI and ML Project*
 
 </div> 
+
 
 
 
